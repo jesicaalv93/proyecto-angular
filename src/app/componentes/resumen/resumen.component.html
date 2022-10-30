@@ -11,10 +11,18 @@
               <h3 class="resume-title">Resumen</h3>
               <div class="resume-item pb-0">
                 <h4>Desarrollador Full Stack Junior</h4>
-                <p><em>Conocimiento de lenguajes de programación de Front End, Back End, APIs y Bases de datos.</em></p>
+                <p><em>Conocimiento de lenguajes de programación de Front End, Back End, APIs y Bases de datos.</em>
+                  <button type="button" class="btn btn-link">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                </p>
                  
                 <h4>Neuropsicopedagoga</h4>
-                <p><em>Articulación de los conocimientos propios de la neurología, la pedagogía y la psicología para dar entender y potenciar los procesos de aprendizaje propios de cada individuo.</em></p>
+                <p><em>Articulación de los conocimientos propios de la neurología, la pedagogía y la psicología para dar entender y potenciar los procesos de aprendizaje propios de cada individuo.
+                  <button type="button" class="btn btn-link">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                </em></p>
                 <ul>
                   <li>Evaluación de los procesos psicológicos básicos y superiores (atención, memoria, percepción, pensamiento, lenguaje y funciones ejecutivas) y cómo estos incrementan o afectan las habilidades de aprendizaje.</li>
                   <li>Intervención individualizada con el enfoque en potencializar cada proceso y así enriquecer el aprendizaje.</li>
@@ -25,10 +33,13 @@
   
               <h3 class="resume-title">Educación</h3>
               <div class="resume-item">
-                <h4>ARGENTINA PROGRAMA - PLAN NACIONAL DE FORMACIÓN EN PROGRAMACIÓN.</h4>
-                <h5>Marzo 2022 - Enero 2023</h5>
-                <p><em>Ministerio de Desarrollo Productivo & Cámara Argentina de la Industria de Software (CESSI)</em></p>
-                <p>Capacitación en programación gratuita y virtual organizada en dos etapas: #SéProgramar (60 hs) y #YoProgramo (250 – 480 hs).</p>
+                <div *ngFor="let educ of miPorfolio.education">
+                  <h4>{{educ.title}}</h4>
+                  <h5>{{educ.date}}</h5>
+                  <p><em>{{educ.school}}</em></p>
+                  <p>{{educ.info}}</p>
+                </div>
+                
               </div>
               <div class="resume-item">
                 <h4>CURSO ANUAL DE NEUROPSICOLOGÍA DEL DESARROLLO.</h4>

@@ -1,4 +1,17 @@
 {
     "name": "Jésica Álvarez",
-    "titulo": "Web Developer Junior"
+    
+    "education": [{
+        "title": "ARGENTINA PROGRAMA - PLAN NACIONAL DE FORMACIÓN EN PROGRAMACIÓN.",
+        "date": "Marzo 2022 - Enero 2023",
+        "school": "Ministerio de Desarrollo Productivo & Cámara Argentina de la Industria de Software (CESSI)",
+        "information": "Capacitación en programación gratuita y virtual organizada en dos etapas: #SéProgramar (60 hs) y #YoProgramo (250 – 480 hs)."
+    },
+    {
+        "title": "CURSO ANUAL DE NEUROPSICOLOGÍA DEL DESARROLLO.",
+        "date": "Julio 2020 - Septiembre 2020",
+        "school": "Centro de Asistencia Docencia e Investigación en Neuropsicología (CADIN).",
+        "information": "Modalidad a distancia. Duración: 100 hs. reloj."
+    }
+]
 }

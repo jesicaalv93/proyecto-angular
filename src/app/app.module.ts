@@ -11,6 +11,7 @@ import { PortafolioComponent } from './componentes/portafolio/portafolio.compone
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxTypedJsModule } from 'ngx-typed-js';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
