@@ -10,25 +10,14 @@
             <div class="col-lg-6" data-aos="fade-up">
               <h3 class="resume-title">Resumen</h3>
               <div class="resume-item pb-0">
-                <h4>Desarrollador Full Stack Junior</h4>
-                <p><em>Conocimiento de lenguajes de programación de Front End, Back End, APIs y Bases de datos.</em>
+                <div *ngFor="let res of miPorfolio.resumen">
+                  <h4>{{res.title}}</h4>
+                  <p><em>{{res.information}}</em>
                   <button type="button" class="btn btn-link">
                     <i class="fa-solid fa-pen-to-square"></i>
                   </button>
-                </p>
-                 
-                <h4>Neuropsicopedagoga</h4>
-                <p><em>Articulación de los conocimientos propios de la neurología, la pedagogía y la psicología para dar entender y potenciar los procesos de aprendizaje propios de cada individuo.
-                  <button type="button" class="btn btn-link">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                  </button>
-                </em></p>
-                <ul>
-                  <li>Evaluación de los procesos psicológicos básicos y superiores (atención, memoria, percepción, pensamiento, lenguaje y funciones ejecutivas) y cómo estos incrementan o afectan las habilidades de aprendizaje.</li>
-                  <li>Intervención individualizada con el enfoque en potencializar cada proceso y así enriquecer el aprendizaje.</li>
-                  <li>Elaboración del perfil de aprendizaje individual en relación con su desarrollo evolutivo.</li>
-                  <li>Estrategias a padres y docentes con la intención de brindar herramientas que permitan un abordaje integral.</li>
-                </ul>
+                  </p>
+                </div>
               </div>
   
               <h3 class="resume-title">Educación</h3>
@@ -37,16 +26,9 @@
                   <h4>{{educ.title}}</h4>
                   <h5>{{educ.date}}</h5>
                   <p><em>{{educ.school}}</em></p>
-                  <p>{{educ.info}}</p>
                 </div>
-                
               </div>
-              <div class="resume-item">
-                <h4>CURSO ANUAL DE NEUROPSICOLOGÍA DEL DESARROLLO.</h4>
-                <h5>Julio 2020 - Septiembre 2020</h5>
-                <p><em>Centro de Asistencia Docencia e Investigación en Neuropsicología (CADIN).</em></p>
-                <p>Modalidad a distancia. Duración: 100 hs. reloj.</p>
-              </div>
+              
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <h3 class="resume-title">Experiencia Profesional</h3>
@@ -58,7 +40,7 @@
                   <li>Valoraciones neurocognitivas e interdisciplinarias.</li>
                   <li>Abordaje psicopedagógico desde la perspectiva del neurodesarrollo.</li>
                   <li>Abordaje Learning Style Profile: Estrategias de intervención para niños con TEA, Trastornos de la Comunicación y del neurodesarrollo.</li>
-                  <li>Estimulación neurocogitiva de adultos/li>
+                  <li>Estimulación neurocogitiva de adultos.</li>
                 </ul>
               </div>
               <div class="resume-item">
@@ -73,10 +55,9 @@
                 </ul>
               </div>
             </div>
+            
             <div class="text-center">
-              <a href="#" class="btn linkbtn aboutlink mt-4">
-              Descargar CV
-              </a>
+              <a href="documento.pdf" download="mi-archivo.pdf">Descargar CV</a>
             </div>
             
           </div>

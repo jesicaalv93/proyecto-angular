@@ -12,7 +12,7 @@ export class ResumenComponent implements OnInit {
 
   ngOnInit(): void {
     this.datosPorfolio.obtenerDatos().subscribe(data =>{
-      this.miPorfolio=data.education;
+      this.miPorfolio=data;
     })
   }
 }

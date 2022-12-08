@@ -1,9 +1,14 @@
  <!-- ======= Header ======= -->
  <header id="header">
     <div class="d-flex flex-column">
-<!-- ======= Login button ======= -->
-    <div class="button"><button type="submit">Login</button></div>
-  <!-- End Login -->
+
+      <a class="nav-link active" aria-current="page" routerLink="/dashboard" *ngIf="isLogin">Dashboard</a>
+      
+      <form class="d-flex">
+        <button class="btn btn-outline-success" type="button" *ngIf="!isLogin" routerLink="/login">Login</button>
+        <button class="btn btn-outline-success" type="button" *ngIf="isLogin" (click)="btnLogout()">Logout</button>
+      </form>
+
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Jésica Álvarez</a></h1>
@@ -23,6 +28,7 @@
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+    
     </div>
     
   </header><!-- End Header -->
