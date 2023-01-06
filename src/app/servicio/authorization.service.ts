@@ -11,7 +11,7 @@ export class AuthorizationService {
   router: any;
 
   constructor(private http:HttpClient) {
-    this.strUrlApi = '../assets/data/user.json';
+    this.strUrlApi = '../../assets/data/user.json';
   }
 
   public loginSimple(email:string, pwd: string): void {     
@@ -23,7 +23,7 @@ export class AuthorizationService {
           //localStorage.setItem('token', response.token);
           this.localStorage.setItem('token', response.token);
           //Redireccionar
-          this.router.navigate(['/menu']);
+          this.router.navigate(['/home']);
         }
       }
     ); 

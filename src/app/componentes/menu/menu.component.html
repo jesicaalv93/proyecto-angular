@@ -2,7 +2,7 @@
  <header id="header">
     <div class="d-flex flex-column">
 
-      <a class="nav-link active" aria-current="page" routerLink="/dashboard" *ngIf="isLogin">Dashboard</a>
+      <a class="nav-link active" aria-current="page" routerLink="/home" *ngIf="isLogin">Home</a>
       
       <form class="d-flex">
         <button class="btn btn-outline-success" type="button" *ngIf="!isLogin" routerLink="/login">Login</button>
@@ -21,11 +21,11 @@
       
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+          <li><a routerLink="/home" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a routerLink="/about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mí</span></a></li>
+          <li><a routerLink="/resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a></li>
+          <li><a routerLink="/portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a routerLink="/contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     

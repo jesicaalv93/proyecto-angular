@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { EncabezadoComponent } from './componentes/encabezado/encabezado.component';
+import { EncabezadoComponent } from './componentes/home/encabezado.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
@@ -12,7 +12,6 @@ import { FooterComponent } from './componentes/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { LoginComponent } from './componentes/login/login.component';
-import { DashboardComponent } from './componentes/dashboard/dashboard.component';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule} from '@angular/forms';
 
@@ -28,8 +27,7 @@ import {FormsModule} from '@angular/forms';
     ContactoComponent,
     FooterComponent,
     MenuComponent,
-    LoginComponent,
-    DashboardComponent
+    LoginComponent
   ],
   imports: [
     BrowserModule,
