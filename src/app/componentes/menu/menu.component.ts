@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthorizationService } from 'src/app/servicio/authorization.service';
+import { Router } from '@angular/router';
+import { TokenService } from 'src/app/servicio/token.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,20 +9,25 @@ import { AuthorizationService } from 'src/app/servicio/authorization.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private auth:AuthorizationService) {
+  isLogged = false;
 
-  }
+  constructor(private router:Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
-
+    if(this.tokenService.getToken()){
+      this.isLogged=true;
+    }else{
+      this.isLogged = false;
+    }
   }
 
-  public get isLogin(): boolean {
-    return this.auth.isUserLogIn();
+  onLogOut():void{
+    this.tokenService.logOut();
+    window.location.reload();
   }
 
-  public btnLogout():void {
-    this.auth.logout();    
+  login(){
+    this.router.navigate(['/login'])
   }
 
 }
