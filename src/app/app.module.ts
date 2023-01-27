@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { LoginComponent } from './componentes/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -34,7 +34,8 @@ import {FormsModule} from '@angular/forms';
     HttpClientModule,
     NgxTypedJsModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

@@ -10,7 +10,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { AuthorizationGuard } from './servicio/authorization.guard';
 
 const routes: Routes= [
-  {path: '', component: EncabezadoComponent},
+  {path: '', component: LoginComponent},
   {path: 'home', component: EncabezadoComponent},
   {path: 'login', component: LoginComponent},
   {path: 'about', component: SobreMiComponent},
