@@ -9,12 +9,13 @@ import { PersonaService } from 'src/app/servicio/persona.service';
   styleUrls: ['./encabezado.component.css']
 })
 export class EncabezadoComponent implements OnInit {
-  persona : persona = new persona ("nombre","apellido","fechaNac","titulo","sobreMi","fotoPerfil");
+  persona : persona = new persona ("","","","");
 
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {this.persona = data});
+   // this.personaService.getPersona
   }
 
 }
