@@ -8,6 +8,7 @@ import { PortafolioComponent } from './componentes/portafolio/portafolio.compone
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { NewExperienciaComponent } from './componentes/experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './componentes/experiencia/edit-experiencia.component';
 
 const routes: Routes= [
   {path: '', component: EncabezadoComponent},
@@ -18,7 +19,8 @@ const routes: Routes= [
   {path: 'portfolio', component: PortafolioComponent},
   {path: 'skill', component: HabilidadesComponent},
   {path: 'contact', component: ContactoComponent},
-  {path: 'nuevaexp', component: NewExperienciaComponent}
+  {path: 'nuevaexp', component: NewExperienciaComponent},
+  {path: 'editexp/:id', component: EditExperienciaComponent}
 ];
 
 @NgModule({

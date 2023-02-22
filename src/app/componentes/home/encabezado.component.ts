@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { subscribeOn } from 'rxjs';
 import { persona } from 'src/app/model/persona.model';
 import { PersonaService } from 'src/app/servicio/persona.service';
 
